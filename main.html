@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inayat Weddings</title>
+<link rel = "shortcut icon" type = "image/jpg"  href ="C:\Users\Esha Srivastav\Pictures\Screenshots\favicon.jpg" >
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style>
+*
+{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#loading
+    {
+    background-color: white;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .gif
+    {
+    width: 20%;
+}
+nav
+{
+width: 100%;
+height: 65px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+position: sticky;
+top:0;
+z-index: +1;
+}
+.inayat
+{
+font-size: 22px;
+color: white;
+}
+ul
+{
+float: left;
+margin-left: 10px;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 65px;
+font-size: 15px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 22px;
+padding-right: 22px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 50px;
+box-shadow: 2px 3px 4px 1px black;
+line-height: 50px;
+margin-left: -20%;
+margin-right: 20%;
+font-size: 15px;
+}
+ul li a:hover
+{
+background-color: white;
+opacity: 0.5;
+color: red;
+}
+ul li ul li
+{
+display: none;
+}
+ul li:hover ul
+{
+position: absolute;
+z-index: 1;
+}
+.container
+{ /* contains the entire division */
+    position: relative;
+    overflow: auto;
+    }
+    #img1
+    {          
+    width: 100%;
+    height: 540px;
+    }
+    main
+{       /* the content for whats on the first image */
+    text-align: center;
+    width: 70%;
+    position: absolute;
+    padding:15px;
+    top:135px;
+    left: 5px;
+    }
+    main p
+    {
+list-style: none;
+text-align: center;
+line-height: 1.2;
+color: white;
+width: 90%;
+font-weight: bold;
+font-size: 20px;
+    }
+    dd
+    {
+    font-size: 20px;
+    text-align: left;
+    }
+    h1{    /* main heading */
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    animation: heading 3s ease-in infinite alternate;
+    margin: 0;
+    background-color: #890620;
+    text-align: center;
+    }
+    @keyframes heading
+    {
+    from {color:black;
+            background-color: #890620;}
+    to {color: black;
+        background-color: #890620;} 
+    }
+     main a
+    {
+    color:white;
+    font-size: 15px;
+    margin-right: 15px;
+    }
+    main a:hover
+    {
+     color:black;
+    }
+    #div2
+    {    /*conatins the founders photos */
+    width:100%;
+    background-image: url("https://img5.goodfon.com/wallpaper/nbig/0/74/tsvety-rozovyi-fon.jpg");
+    background-repeat: repeat-x;
+    height:auto;
+    border-top:4px solid white ;
+    }
+    #img2{
+        width:100%;
+        height:500px;  
+    }
+    #div2 p{
+        padding: 20px;
+        margin: 0;
+        font-size: 35px;
+    }
+    #founded{ /*text for the founders */
+        position: absolute;
+        top: 180px;
+        font-style: italic;
+        right: 70px;
+        text-align: center;
+    }
+    #founded h2{
+        font-size: 40px;
+        font-weight: bold;
+    }
+    #founded p{
+        width: 80%;
+        font-size: 25px;
+    }
+    .downimg{      /* photos of the founders */
+        width:210px;
+        float: left;
+        border: 1px solid black;
+        height: 210px;
+        margin-left: 50px;
+        border-radius: 50%;
+    }
+    .downtxt{      /* name of the founders */
+        text-align: center;
+        padding:25px 50px 25px 80px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+     #subscribe
+    {     /*subscribe to newsletter division */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        background-color: #890620;
+    }
+    #subscribe p
+    {
+   margin-bottom:0;
+   margin-top: 0;
+   font-size: 20px;
+   color: white;
+    }
+    #but
+    {
+        color: black;
+        font-size: x-small;
+    }
+    #subscribe input{
+        background-color:wheat;
+        width: 10%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .footer
+{
+background-image: url("https://i.pinimg.com/564x/30/82/81/308281cc77455c03fe27bd4855329672.jpg");
+background-repeat: repeat;
+background-size: 50%;
+width: 100%;
+font-family: 'Times New Roman', Times, serif;
+border-top: white 2px solid;
+color: white;
+clear: both;
+padding-bottom: 20px;
+}
+    .modal    /* for the subscribe to newsletter pop up */
+    {
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border:1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-image: url("https://image.freepik.com/free-photo/pink-roses-wooden-copy-space-background_23-2148268261.jpg");
+        background-size: cover;
+        width: 450px;
+        max-width: 80%;
+    }
+    .modal-header
+    {
+        display: flex;
+        padding: 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid black;
+    }
+    .close-button
+    {
+        background:none;
+        outline: none;
+        cursor: pointer;
+        font-weight: bold;
+        color: black;
+        border:none;
+        font-size: large;
+    }
+    .modal-body
+    {
+        padding: 10px 15px 19px;
+    }
+    .overlay
+    {
+        left: 0;
+        top:0;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0,0,0,0.8);
+        position: fixed;
+        display: none;
+    }
+    #but
+    {
+        font-size: large;
+        color: black;
+        background-color: wheat;
+        cursor: pointer;
+        padding: 5px;
+    }
+     @media only screen and (max-width: 1200px)
+     {
+       
+        #founded{
+            position: absolute;
+            top: 160px;
+            font-style: italic;
+            left:150px;
+            text-align: center;
+        }
+        #founded h2{
+            font-size: 20px;
+        }
+        #founded p{
+            width: 100%;
+            font-size: 15px;
+        }
+        .downimg{
+            width:120px;
+            float: left;
+            border: 3px solid darkred;
+            height: 120px;
+            overflow: auto;
+            margin-left: 60px;
+            border-radius: 50%;
+        }
+        .downtxt{
+            text-align: center;
+            padding:25px 70px 25px 100px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+        h1{
+            font-size: 30px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            animation: heading 3s ease-in infinite alternate;
+            margin: 0;
+            text-align: center;
+        }
+}
+    @media only screen and (max-width: 1000px)
+{
+nav
+{
+width: 100%;
+height: 50px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+position: sticky;
+z-index: +1;
+top: 0;
+}
+.inayat
+{
+font-size: 22px;
+color: white;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 50px;
+font-size: 15px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 16px;
+padding-right: 16px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 40px;
+line-height: 40px;
+font-size: small;
+box-shadow: 1px 2px 3px 1px black;
+}
+.footer
+{
+background-image: url("https://i.pinimg.com/564x/30/82/81/308281cc77455c03fe27bd4855329672.jpg");
+background-repeat: repeat;
+padding-bottom: 20px;
+width: 100%;
+border-top: white 2px solid;
+color: white;
+clear: both;
+font-size: small;
+}
+}
+@media only screen and (max-width: 800px)
+{
+nav
+{
+width: 100%;
+height: 40px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+position: sticky;
+top:0;
+z-index: +1;
+}
+.inayat
+{
+font-size: 13px;
+color: white;
+margin-left: 10px;
+}
+ul
+{
+float: left;
+margin-left: 10px;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 40px;
+font-size: 10px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 7px;
+padding-right: 7px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 30px;
+box-shadow: 1px 2px 3px 1px black;
+line-height: 30px;
+margin-left: -20%;
+margin-right: 20%;
+font-size: xx-small;
+}
+}
+@media only screen and (max-width: 580px)
+     {
+        .modal
+        {
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        border:1px solid black;
+        border-radius: 10px;
+        z-index: 10;
+        background-image: url("https://image.freepik.com/free-photo/pink-roses-wooden-copy-space-background_23-2148268261.jpg");
+        background-size: cover;
+        width: 90%;
+        font-size: xx-small;
+        }
+    }
+@media only screen and (max-width: 470px)
+{
+nav
+{
+width: 100%;
+height: 40px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+position: sticky;
+top:0;
+z-index: +1;
+}
+.inayat
+{
+font-size: 11px;
+color: white;
+margin-left: 10px;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 40px;
+font-size: 6px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 6px;
+padding-right: 6px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 30px;
+box-shadow: 1px 2px 3px 1px black;
+line-height: 30px;
+margin-left: -20%;
+margin-right: 20%;
+}
+.footer
+{
+margin-top: 50px;
+background-image: url("https://i.pinimg.com/564x/30/82/81/308281cc77455c03fe27bd4855329672.jpg");
+background-repeat: repeat;
+background-size: 50%;
+width: 100%;
+border-top: white 2px solid;
+color: white;
+clear: both;
+font-size: x-small;
+padding-bottom: 20px;
+}
+}
+</style>
+</head>
+<body onload="myFunction()">
+<div id="loading">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1034da38251751.575a73ca2a072.gif" class="gif">
+    </div>
+<div style="height: 18px; background-color: black;">
+<p style="float: right;color: white;font-family: arial;padding-right: 8px;font-size: 10px;line-height: 18px;">info@inayatweds.com</p>
+</div>
+<nav>
+<ul>
+<li class="inayat"><b>INAYAT |</b></li>
+<li><a href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="ourservices.html">Our Services</a></li>
+<li><a href="testimonials.html">Testimonials</a></li>
+<li><a href="#">Themes <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+<ul>
+<li><a href="rajwadi.html">Royal Rajwadi</a></li>
+<li><a href="fairytale.html">Fairytale</a></li>
+<li><a href="bollywood.html">Bollywood Tadka</a></li>
+<li><a href="woodland.html">Woodland Forest</a></li>
+<li><a href="beach.html">Beach Wedding</a></li>
+</ul>
+</li>
+<li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact us</a></li>
+</ul>
+</nav>
+<div>
+<img id="img1" src="https://www.linandjirsa.com/wp-content/uploads/indian-wedding-timeline.jpg">
+    <h1 style="text-shadow: 2px 2px white;">INAYAT WEDDINGS</h1>
+    <main>
+        <p>At Inayat Weddings, planning Destination Weddings is our strongest competence.
+           So if you are planning a destination wedding, let us enhance your wedding
+           experience with our expertise and flawless execution.</p><br>
+           <a href="aboutus.html" style="text-decoration:underline;">Your dream wedding starts here --></a>
+    </main>
+  </div>
+  <div class="container">
+    <img id="img2" src="https://images.unsplash.com/photo-1543157145-f78c636d023d?ixlib=rb-1.2.1&w=1000&q=80">
+   <div id="founded">
+       <h2>Since 2005</h2><br>
+       <p>With over 15 years of experience, we strive to make your wedding day perfect.</p>
+   </div>
+</div>
+</div>
+    <div class="container" id="div2">
+        <center>
+        <p style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;font-weight: bold;"> The Founders </p>
+        <table>
+            <tr>
+                <td><img class="downimg" src="esha.jpeg"> </td>
+                <td><img class="downimg" src="himani.jpeg"></td>
+                <td><img class="downimg" src="riya.jpeg"></td>
+                <td><img class="downimg" src="sakshi.jpg"></td>
+            </tr>
+            <tr>
+                <td class="downtxt">Esha Srivastav</td>
+                <td class="downtxt">Himani Verma</td>
+                <td class="downtxt">Riya Sharma</td>
+                <td class="downtxt">Sakshi Jain</td>
+            </tr>
+            </table>
+        </center>
+    </div>
+    <div id="subscribe">
+        <center>
+            <p> Subscribe to our newsletter!</p><br>
+            <button id="but">Yes, please!</button>
+        </center>
+    </div>
+    <div class="footer">
+<footer>
+<h2 style="text-align: center;padding-top: 40px;">INAYAT WEDDING PLANNERS</h2><br>
+<center>
+<p>Contact us: <br> 90010-81223<br>info@inayatweds.com</p><br>
+<p><a href="https://www.facebook.com/" target="_blank" style="padding-right: 10px;"><i class="fa fa-facebook" aria-hidden='true'></i></a>
+<a href="https://www.twitter.com/" target="_blank" style="padding-right: 10px;"><i class="fa fa-twitter" aria-hidden='true'></i></a>
+<a href="https://www.instagram.com/" target="_blank" style="padding-right: 10px;"><i class="fa fa-instagram" aria-hidden='true'></i></a>
+  </p><br><hr style="width: 80%;"><br>
+  <p style="color: khaki;">@ INAYAT LLC. All rights reserved.<br> Terms of use - Site Credit</p>
+</center>
+</footer>
+</div>
+    <div class="overlay">
+        <div class="modal" id="modal">
+            <div class="modal-header">
+                <div class="title"><b>SUBSCRIBE</b></div>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3 style="text-align: center;text-shadow: 2px 2px 5px pink;color:#890620;font-size:45px;font-family:Georgia, 'Times New Roman', Times, serif;margin-bottom: 10px;"><b>INAYAT</b></h3>
+                <p style="text-align: center;"><b>Sign up for our daily newsletter!</b></p><br>
+                <p style="text-align: center;"><b>Be the first one two know about our major events, latest collaborations and special offers, everyday in your in-box.</b></p><br>
+                <form>
+                    <center>
+                    <label><b>Enter your email:</b></label>
+                    <input type="email" name="email" placeholder="example@gmail.com" required style="background:transparent;border:none;border-bottom: 1px solid black;padding-left: 10px;"><br><br><br>
+                    <input type="submit" value="SIGN ME UP" style="background-color: rgba(255,0,0,0.8);color: white;text-align: center;width: 40%;display: block;height: 30px;cursor: pointer;">
+                </center>
+                </form>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.getElementById('but').addEventListener('click',function(){
+                document.querySelector('.overlay').style.display='flex';
+            });
+            document.querySelector('.close-button').addEventListener('click',function(){
+                document.querySelector('.overlay').style.display='none';
+            });
+            var preloader = document.getElementById('loading');
+            function myFunction(){
+            preloader.style.display = 'none';}
+        </script>
+</body>
+</html>
+

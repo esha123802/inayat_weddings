@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Inayat Weddings | Our Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<style type="text/css">
+*
+{
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+body
+{
+background-image: url("https://mcdn.wallpapersafari.com/medium/6/44/N6F2Hl.jpg");
+background-repeat: repeat;
+}
+#loading
+{
+background-color: white;
+position: fixed;
+top:0;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 100;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.gif
+{
+width: 20%;
+}  
+.heading
+{
+background-image: url("https://image.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg");
+background-repeat: repeat;
+background-position: top left;
+background-size: 50%;
+height: 70px;
+opacity: 0.9;
+border:1px solid white;
+box-shadow: 1px 2px 10px 2px black;
+}
+.edit
+{
+margin-top: 40px;
+text-align: center;
+color: brown;
+font-family:cursive;
+font-size: 15px;
+text-shadow: 2px 4px white;
+}
+nav
+{
+position: sticky;
+top:0;
+z-index: +1;
+width: 100%;
+height: 40px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+}
+.inayat
+{
+font-size: 11px;
+color: white;
+margin-left: 10px;
+}
+ul
+{
+float: left;
+margin-left: 10px;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 40px;
+font-size: 6px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 6px;
+padding-right: 6px;
+color: white;
+display: block;
+}
+ul li a:hover{
+background-color: white;
+opacity: 0.5;
+color: red;
+}
+ul li ul li
+{
+display: none;
+}
+ul li:hover ul
+{
+position: absolute;
+z-index: 1;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 30px;
+box-shadow: 1px 2px 3px 1px black;
+line-height: 30px;
+margin-left: -20%;
+margin-right: 20%;
+}
+.content
+{
+width: 85%;
+border:1px solid black;
+margin-top: 50px;
+margin-right: 28%;
+margin-left: 4%;
+padding: 20px 5px 20px 5px;
+font-size: small;
+background-color: white;
+margin-bottom: 40px;
+font-size: x-small;
+}
+.pic6
+{
+float: left;
+border:1px solid black;
+height: 100px;
+width: 25%;
+margin-left: 4%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/87/11/70/871170870c8177dfa962995b4e7fb083.jpg");
+}
+.pic1
+{
+float: left;
+border:1px solid black;
+height: 100px;
+width: 25%;
+margin-left: 4%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/96/a7/15/96a715b4090ec5c053ac6a42f54c64a7--wedding-set-stage-wedding.jpg");
+}
+.pic2
+{
+float: left;
+border:1px solid black;
+height: 100px;
+width: 25%;
+margin-left: 4%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/54/67/96/5467968fc7c333cbbb2a39ecbb7f871e--indian-bridal-hairstyles-bridal-jewellery.jpg");
+}
+.getintouch
+{
+border:1px solid black;
+width: 50%;
+height: 30px;
+text-align: center;
+margin-top: 250px;
+margin-left: 25%;
+}
+section a b:hover
+{
+color: white;
+background-color:black;
+font-size: 20px;
+height: 35px;
+border:2px solid white;
+display: block;
+line-height: 35px;
+}
+footer{
+    background-image: url("https://i.pinimg.com/564x/30/82/81/308281cc77455c03fe27bd4855329672.jpg");
+    background-repeat: repeat;
+    background-size: 50%;
+    width: 100%;
+    padding-bottom: 20px;
+    border-top: white 2px solid;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+ }
+footer h2{
+    margin:0;
+    padding:0;
+}      
+/* contact us icon links */
+#cnt{
+    width:140px;
+    border-radius:25px;
+    height:21px;
+    padding:0 0 4px 15px;
+    line-height: 2;
+    margin:0 auto;
+    }
+.cnt_img{
+    height:23px;
+    width:23px;  
+    border-radius: 5px;
+    margin-right:10px;
+    float:left;
+    }
+.cnt_img:hover{
+    height:30px;
+    width:30px;
+    }
+@media only screen and (min-width: 400px)
+{
+.heading
+{
+background-image: url("https://image.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg");
+background-repeat: repeat;
+background-position: top left;
+background-size: 25%;
+height: 70px;
+opacity: 0.9;
+border:1px solid white;
+box-shadow: 1px 2px 10px 2px black;
+}
+nav
+{
+width: 100%;
+height: 40px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+}
+.inayat
+{
+font-size: 13px;
+color: white;
+margin-left: 10px;
+}
+ul
+{
+float: left;
+margin-left: 10px;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 40px;
+font-size: 8px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 6px;
+padding-right: 6px;
+color: white;
+display: block;
+}
+ul li a:hover{
+background-color: white;
+opacity: 0.5;
+color: red;
+}
+ul li ul li
+{
+display: none;
+}
+ul li:hover ul
+{
+position: absolute;
+z-index: 1;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 30px;
+box-shadow: 1px 2px 3px 1px black;
+line-height: 30px;
+margin-left: -20%;
+margin-right: 20%;
+}
+.content
+{
+width: 85%;
+border:1px solid black;
+margin-top: 50px;
+margin-right: 28%;
+margin-left: 4%;
+padding: 20px 10px 20px 20px;
+font-size: small;
+background-color: white;
+margin-bottom: 40px;
+font-size: smaller;
+}
+.pic6
+{
+float: left;
+border:1px solid black;
+height: 150px;
+width: 25%;
+margin-left: 6%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/87/11/70/871170870c8177dfa962995b4e7fb083.jpg");
+}
+.pic1
+{
+float: left;
+border:1px solid black;
+height: 150px;
+width: 25%;
+margin-left: 6%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/96/a7/15/96a715b4090ec5c053ac6a42f54c64a7--wedding-set-stage-wedding.jpg");
+}
+.pic2
+{
+float: left;
+border:1px solid black;
+height: 150px;
+width: 25%;
+margin-left: 6%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/54/67/96/5467968fc7c333cbbb2a39ecbb7f871e--indian-bridal-hairstyles-bridal-jewellery.jpg");
+}
+}
+@media only screen and (min-width: 790px)
+{
+.heading
+{
+background-image: url("https://image.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg");
+background-repeat: repeat;
+background-position: top left;
+background-size: 25%;
+height: 120px;
+opacity: 0.9;
+border:1px solid white;
+box-shadow: 1px 2px 10px 2px black;
+}
+.edit
+{
+margin-top: 70px;
+text-align: center;
+color: brown;
+font-family:cursive;
+font-size: 25px;
+text-shadow: 2px 4px white;
+}
+nav
+{
+width: 100%;
+height: 50px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+}
+.inayat
+{
+font-size: 22px;
+color: white;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 50px;
+font-size: 15px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 16px;
+padding-right: 16px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 40px;
+line-height: 40px;
+font-size: small;
+box-shadow: 1px 2px 3px 1px black;
+}
+.content
+{
+width: 85%;
+border:1px solid black;
+margin-top: 50px;
+margin-right: 28%;
+margin-left: 6%;
+padding: 20px 10px 20px 20px;
+font-size: small;
+background-color: white;
+margin-bottom: 40px;
+font-size: large;
+}
+.pic6
+{
+float: left;
+border:1px solid black;
+height: 220px;
+width: 27%;
+margin-left: 4%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/87/11/70/871170870c8177dfa962995b4e7fb083.jpg");
+}
+   .pic1
+{
+float: left;
+border:1px solid black;
+height: 220px;
+width: 27%;
+margin-left: 6%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/96/a7/15/96a715b4090ec5c053ac6a42f54c64a7--wedding-set-stage-wedding.jpg");
+}
+   .pic2
+{
+float: left;
+border:1px solid black;
+height: 220px;
+width: 27%;
+margin-left: 6%;
+margin-top: 10px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/54/67/96/5467968fc7c333cbbb2a39ecbb7f871e--indian-bridal-hairstyles-bridal-jewellery.jpg");
+}
+.getintouch
+{
+border:1px solid black;
+width: 50%;
+height: 30px;
+text-align: center;
+margin-top: 350px;
+margin-left: 25%;
+}
+footer{
+    background-color: black;
+    width: 100%;
+    padding-bottom: 20px;
+    border-top: white 2px solid;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+ }
+footer h2{
+    margin:0;
+    padding:0;
+}      
+/* contact us icon links */
+#cnt{
+    width:140px;
+    border-radius:25px;
+    height:21px;
+    padding:0 0 4px 15px;
+    line-height: 2;
+    margin:0 auto;
+    }
+.cnt_img{
+    height:23px;
+    width:23px;  
+    border-radius: 5px;
+    margin-right:10px;
+    float:left;
+    }
+.cnt_img:hover{
+    height:30px;
+    width:30px;
+    }
+@media only screen and (min-width: 1200px)
+{
+.heading
+{
+background-image: url("https://image.freepik.com/free-vector/background-template-with-mandala-pattern-design_1308-42133.jpg");
+background-repeat: repeat;
+background-position: top left;
+background-size: 25%;
+height: 150px;
+opacity: 0.9;
+border:1px solid white;
+box-shadow: 1px 2px 10px 2px black;
+}
+.edit
+{
+margin-top: 83px;
+text-align: center;
+color: brown;
+font-family:cursive;
+font-size: 40px;
+text-shadow: 2px 4px white;
+}
+nav
+{
+width: 100%;
+height: 65px;
+background-color: #890620;
+box-shadow: 1px 2px 10px 2px black;
+}
+ul li
+{
+list-style: none;
+display: inline-block;
+line-height: 65px;
+font-size: 15px;
+}
+ul li a
+{
+font-family: arial;
+padding-left: 22px;
+padding-right: 22px;
+color: white;
+display: block;
+}
+ul li:hover ul li
+{
+display: block;
+background-color: #890620;
+height: 50px;
+box-shadow: 2px 3px 4px 1px black;
+line-height: 50px;
+margin-left: -20%;
+margin-right: 20%;
+font-size: 15px;
+}
+
+.content
+{
+width: 60%;
+float: right;
+border:1px solid black;
+margin-top: 50px;
+margin-right: 30px;
+padding: 20px 10px 20px 20px;
+font-size: larger;
+background-color: white;
+}
+.pic6
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/87/11/70/871170870c8177dfa962995b4e7fb083.jpg");
+}
+.pic1
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/96/a7/15/96a715b4090ec5c053ac6a42f54c64a7--wedding-set-stage-wedding.jpg");
+}
+   .pic2
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: cover;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/474x/54/67/96/5467968fc7c333cbbb2a39ecbb7f871e--indian-bridal-hairstyles-bridal-jewellery.jpg");
+}
+.pic5
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/cb/47/4d/cb474db4ecbf53fd3a2f10bd1601e08c.jpg");
+}
+.pic3
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://i.pinimg.com/564x/1e/c3/49/1ec34990071269ae872d6b5370447396.jpg");
+}
+.pic4
+{
+float: left;
+border:1px solid black;
+height: 350px;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-image: url("https://images.pexels.com/photos/3699360/pexels-photo-3699360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+}
+
+.getintouch
+{
+float: left;
+border:1px solid black;
+width: 26%;
+margin-left: 30px;
+margin-top: 50px;
+height: 30px;
+text-align: center;
+}
+footer{
+    background-image: url("https://i.pinimg.com/564x/30/82/81/308281cc77455c03fe27bd4855329672.jpg");
+    width: 100%;
+    padding-bottom: 20px;
+    border-top: white 2px solid;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: auto;
+ }
+footer h2{
+    margin:0;
+    padding:0;
+}  
+/* contact us icon links */
+#cnt{
+    width:140px;
+    border-radius:25px;
+    height:21px;
+    padding:0 0 4px 15px;
+    line-height: 2;
+    margin:0 auto;
+    }
+.cnt_img{
+    height:23px;
+    width:23px;  
+    border-radius: 5px;
+    margin-right:10px;
+    float:left;
+    }
+.cnt_img:hover{
+    height:30px;
+    width:30px;
+    }
+}
+}
+
+  </style>
+</head>
+<body onload="myFunction()">
+    <div id="loading">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/1034da38251751.575a73ca2a072.gif" class="gif">
+    </div>
+<div style="height: 18px; background-color: black;">
+<p style="float: right;color: white;font-family: arial;padding-right: 8px;font-size: 10px;line-height: 18px;">info@inayatweds.com</p>
+</div>
+<div class="heading">
+<h1 class="edit">OUR SERVICES</h1>
+</div>
+<nav>
+        <ul>
+            <li class="inayat"><b>INAYAT |</b></li>
+            <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="ourservices.html">Our Services</a></li>
+            <li><a href="testimonials.html">Testimonials</a></li>
+            <li><a href="#">Themes <i class="fa fa-sort-desc" aria-hidden="true"></i></a>
+            <ul>
+                <li><a href="rajwadi.html">Royal Rajwadi</a></li>
+                <li><a href="fairytale.html">Fairytale</a></li>
+                <li><a href="bollywood.html">Bollywood Tadka</a></li>
+                <li><a href="woodland.html">Woodland Forest</a></li>
+                <li><a href="beach.html">Beach Wedding</a></li>
+            </ul>
+            </li>
+            <li><a href="contactus.html"><i class="fa fa-phone" aria-hidden="true"></i> Contact us</a></li>
+        </ul>
+</nav>
+<article class="content">
+<img src="https://i.ibb.co/JRTK9z4/horizontally-centered-vertical-decoration.png" style="height: 150px;width: 103%;
+margin-top: -20px;margin-left: -2%;" class="border">
+<p style="margin-top: 20px;">
+The Wedding Planners offers those ever-so-important services related to weddings. In fact, we love all things weddings to such an extent that we take pleasure in managing all aspects in a bid to make your special day an extraordinary one that will be forever remembered. Looking to plan a multi-day celebration with elaborate and regal touches? Do you want your wedding to take place at a destination of your choice but you have not idea how to go about it? Or, maybe you just need some help to pop the question in the most beautiful setting. We at Inayat weddings can handle it all!
+</p><br><br>
+<h3 style="color: red;">Wedding Budget Management</h3>
+<p> The Inayat Wedding Planners will help you execute your vision in the wedding budget that you are comfortable with. Keeping in mind your Indian wedding budget and costs, we will use our expertise and experience to plan, execute and manage your pre-wedding functions, wedding and reception as well as other required events.</p><br><br>
+<h3 style="color: red;">Wedding Design and Décor</h3>
+<p>Wedding and wedding reception design and décor is not a simple undertaking involving just the big picture decorations like the flowers, mandap and basic lighting, it involves a variety of small and big tasks like seating arrangements, finding or creating the perfect centerpieces or stage backdrops, deciding on ambient or mood lighting and much, much more. We will conceptualize, create and coordinate themes and all your décor desires, in conjunction with your vision.</p><br><br>
+<h3 style="color: red;">Vendor Management</h3>
+<p>We will refer established and professional wedding vendors for every area of your wedding. We are experienced in managing different vendors and deal with many reputed wedding vendors in different arenas on a daily basis. Our expertise in the wedding planning business has armed us with the knowledge of what exactly needs to be done and which questions you will need to ask the many vendors you plan to work with.</p><br><br>
+<h3 style="color: red;">Wedding Venues</h3>
+<p>When it comes to wedding planning, choosing the perfect wedding venue is by far one of the most important things you need to decide in advance. After all, you don’t want to be stuck with a venue that you are not happy with, just because the location you actually want is not available on your wedding day. We will help you choose and finalize wedding venues in Mumbai, Goa, Rajasthan and many other wedding destinations in India and internationally. With Inayat, finding a wedding venue becomes easy, with various options ranging from wedding and reception venues to locations for beach or royal palace weddings.</p><br><br>
+<h3 style="color: red;">Wedding Menu Planning </h3>
+<p>The meals at your wedding and wedding related events are often used as a judging factor on how the whole event was. Even if you have the best décor and ambience, a sub-standard wedding meal pretty much kills the effort and quite literally leaves a bad taste in your guests’ mouths! will consult and coordinate menu selections, design, presentation, styling as well as bar and alcohol management. We will make sure you get the service you need with the appropriate service staff and presentation.</p><br><br>
+<h3 style="color: red;">Wedding Photography</h3>
+<p>Your wedding day is one of those occasions where you would definitely want to capture every special moment. These are the pictures you will treasure for generations to come. When it comes to a wedding, taking pictures or a video is a totally in the moment job and not something you can recreate, so you have to find a professional who is excellent at what he/she does. We will arrange for wedding photographers to best suit your budget and requirements for your event celebrations, pre wedding shoot, bridal photo shoot and more.</p><br><br>
+<h3 style="color: red;">Wedding Videography / Cinematography</h3>
+<p>The different styles of wedding videography tell your wedding stories in their own unique way. We will arrange for the best wedding videographers that suit your style and budget and help you savour every moment while you star in your very own movie.</p><br><br>
+<h3 style="color: red;">Bridal Styling: Makeup, Hair & Draping </h3>
+<p>It is your big day and you want to look your best! Apart from your wedding attire, it is crucial to select the perfect makeup and hair stylist – one who you are comfortable with. It is your big day and you want to look your best! Apart from your wedding attire, it is crucial to select the perfect makeup and hair stylist – one who you are comfortable with. We also assist with fixing up appointment and trials as needed and finding the right accessories for your looks. </p><br><br>
+<h3 style="color: red;">Booking your Wedding Choreographer </h3>
+<p>Indian Weddings are joyous celebrations, a time for unbridled happiness…and filled with lots of song and dance! Whether it is a sweet couple’s dance at the end of the reception or the more enthusiastic group dances at a Sangeet, music and dancing can be so intimate and so very fun. The popularity of choreographed dancing is solidified further by our voracious love of romantic Bollywood movies and fairytale Hollywood flicks. Hiring a professional choreographer helps put together a show no one will forget and is a great way to celebrate not only the marriage but all the people involved. We will help you book a choreographer, along with our many other wedding planning services. If required we will also arrange for a proper location for dance rehearsals for the sangeet performances, ‘first dance’ etc. All you need to arrange for are your dancing shoes!</p><br><br>
+<h3 style="color: red;">Wedding Transport Providers</h3>
+<p>If a wedding has to run smoothly everyone needs to get to the right destination at the right time. Arranging for transportation is an aspect of wedding planning that couples often leave for the last minute and that is recipe for chaos. You and your families definitely don’t need that added stress! We will organise and coordinate on-ground transportation services for the couple, family and guests.</p><br><br>
+<h3 style="color: red;">Pre Wedding Photography</h3>
+<p>Pre Wedding Photography is a trend that is catching up fast. It’s a perfect get way for you and your spouse-to-be and a great way to take some lovely pictures for your personal album which you will cherish forever. This can be something as simple as a local photo shoot at some of yourfavorite hangouts or a destination photo shoot. A pre wedding photo shoot is a great way to relax and get away from the stress of the wedding planning process. Pre Wedding Photography is a trend that is catching up fast. It’s a perfect get way for you and your spouse-to-be and a great way to take some lovely pictures for your personal album which you will cherish forever. This can be something as simple as a local photo shoot at some of yourfavorite hangouts or a destination photo shoot. A pre wedding photo shoot is a great way to relax and get away from the stress of the wedding planning process.</p><br>
+<p>We can help you with as much or as little as you require, from the extensive list of services above. Call or email us today to begin planning your wedding…</p>
+</article>
+<section class="pic6"></section>
+<section class="pic1"></section>
+<section class="pic2"></section>
+<section class="pic3"></section>
+<section class="pic4"></section>
+<section class="pic5"></section>
+<section class="getintouch">
+<a href="contactus.html" style="line-height: 30px;color: red;display: block;"><b>GET IN TOUCH</b></a>
+</section><br><br>
+ <div class="footer">
+            <footer>
+                <h2 style="text-align: center;padding-top: 40px;">INAYAT WEDDING PLANNERS</h2><br>
+                <center>
+                <p>Contact us: <br> 90010-81223<br>info@inayatweds.com</p><br>
+                <p><a href="#"><i class="fa fa-facebook" aria-hidden='true'></i></a>
+                <a href="##"><i class="fa fa-twitter" aria-hidden='true'></i></a>
+                <a href="###"><i class="fa fa-instagram" aria-hidden='true'></i></a>
+                   </p><br><hr style="width: 80%;"><br>
+                   <p style="color: khaki;">@ INAYAT LLC. All rights reserved.<br> Terms of use - Site Credit</p>
+                </center>
+            </footer>
+        </div>
+        <script>
+            var preloader = document.getElementById('loading');
+            function myFunction(){
+            preloader.style.display = 'none';}
+        </script>
+
+</body>
+</html>
